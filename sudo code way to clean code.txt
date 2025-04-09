@@ -1,0 +1,61 @@
+define name
+name = input "whats your name"
+print "Hello " + name
+End program
+
+start
+define Grade = ""
+LetterGrade = ""
+if Grade >= 90 then
+	LetterGrade is A
+else if Grade >= 80 then
+	LetterGrade is B
+else if Grade >= 70 then
+	LetterGrade is C
+else if Grade >= 60 then
+	LetterGrade is D
+else if Grade >= 50 then
+	LetterGrade is E
+else
+	LetterGrade is F
+print "Your Grade : " + LetterGrade
+end progam
+
+nested statement
+start
+define Age = 16
+define hasLicence
+if Age >= 16 then
+	if hasLicence then
+	print "You can drive"
+	else 
+	print "You must have licence to drive"
+else 
+print "you are not up to 16 years"
+
+start
+input number1 = "Please enter the first number :"
+input number2 = "Please enter the second number : "
+
+if number1 >= number2 then
+	if number1 > number2 then
+	print "Number1 is the largest"
+	if number1 = number2 then
+	print "Number1 and Number2 are both Equal"
+else
+print "Number2 is the largest"
+end program
+
+for while loop
+
+start
+define runingTotal = 0
+define enteredNum = 0
+
+while enteredNum >= 10 then
+	runingTotal += enterednum
+	Prompt enteredNum = "Please Enter a Number. Enter -1 to exit"
+print "The total is :" + runingTotal
+end
+
+

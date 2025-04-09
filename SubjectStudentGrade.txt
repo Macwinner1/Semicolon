@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class DifferentSubjectScore{
+public static void main(String[] args){
+Scanner input = new Scanner(System.in);
+System.out.print("Enter Student Name : ");
+string StudentName1 = input.nextLine();
+System.out.println("Enter English Subject Score : ");
+int engScore1 = input.nextInt();
+System.out.println("Enter Maths Subject Score : ");
+int MathScore1 = input.nextInt();
+System.out.println("Enter History Subject Score : ");
+int HistoryScore1 = input.nextInt();
+System.out.println("Enter Physic Subject Score : ");
+int PhyScore1 = input.nextInt();
+System.out.println("Enter Chemistry Subject Score : ");
+int ChemScore1 = input.nextInt();
+System.out.println("Enter Geography Subject Score : ");
+int GeoScore1 = input.nextInt();
+System.out.println("Enter Tech Subject Score : ");
+int TechScore1 = input.nextInt();
+System.out.println("Enter Biology Subject Score : ");
+int BioScore1 = input.nextInt();
+
+}
+}
