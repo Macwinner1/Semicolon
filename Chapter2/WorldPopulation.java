@@ -7,7 +7,7 @@ System.out.println("Please enter the World Population :");
 double WorldPopulation = input.nextDouble();
 
 
-double percentage = 0.9 / 100; 
+double percentage = 0.09; 
 
 
 double yearOne = (long)WorldPopulation * (1 + percentage) * (1 + percentage);
