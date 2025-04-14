@@ -26,16 +26,18 @@ int smallest = 0;
 
 if(number1 >= number2){
 largest = number1;
+smallest = number2;
 }
-else if(number2 <= number1){
+else if(number2 < number1){
 smallest = number2;
 }
 
 
 if(number2 >= number1){
 largest = number2;
+smallest = number1;
 }
-else if(number1 <= number2){
+else if(number1 < number2){
 smallest = number1;
 }
 
