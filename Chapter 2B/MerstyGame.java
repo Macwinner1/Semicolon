@@ -16,11 +16,11 @@ number = input.nextInt();
 if(number == randomNumber){
 System.out.println("Wow it's a match");
 }
-
+else{
 if(number > randomNumber){
 System.out.println("Number is too high");
 }
-else if(number < randomNumber){
+if(number < randomNumber){
 System.out.println("Number is too low");
 }
 
@@ -30,11 +30,11 @@ number = input.nextInt();
 if(number == randomNumber){
 System.out.println("Wow it's a match");
 }
-
+else{
 if(number > randomNumber){
 System.out.println("Number is too high");
 }
-else if(number < randomNumber){
+if(number < randomNumber){
 System.out.println("Number is too low");
 }
 
@@ -56,7 +56,8 @@ System.out.println("The Randon number is: " + randomNumber);
 System.out.println("Number is too low");
 System.out.println("Game over");
 }
-
+}
+}
 
 }
 
