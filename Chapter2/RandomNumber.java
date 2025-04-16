@@ -5,8 +5,8 @@ public static void main(String[] args){
 
 Random random = new Random();
 
-int number1 = random.nextInt(1, 7);
-int number2 = random.nextInt(1, 7);
+int number1 = random.nextInt(0, 3);
+int number2 = random.nextInt(0, 3);
 System.out.print(number1 + " ");
 System.out.println(number2);
 

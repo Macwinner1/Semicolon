@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.AssertionError;
 
 public class CurrencyEx{
 public static void main(String[] args){
@@ -10,18 +11,25 @@ double dollarResult = 0;
 double rmbResult = 0;
 double covert = 0;
 double counter = 0.01;
+double rate;
 
 System.out.print("Enter the exchange rate from dollars to RMB: ");
-double rate = input.nextDouble();
+rate = input.nextDouble();
 
+try
+{
+rate = 0;
+}
+catch(Exception e)
+{
+System.out.println("Sorry this is not a vaild rate.", + e);
+}
 
 if(rate >=0.01){
 System.out.print("Enter 0 to convert dollars to RMB and 1 vice verse: ");
 covert = input.nextDouble();
 }
-else if(rate <= 0){
-System.out.println("Sorry this is not a vaild exchange rate....");
-}
+
 
 if(covert == 0){
 System.out.print("Enter dollars amount: ");
