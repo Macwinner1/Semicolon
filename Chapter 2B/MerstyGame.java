@@ -51,7 +51,7 @@ System.out.println("The Randon number is: " + randomNumber);
 System.out.println("Number is too high");
 System.out.println("Game over");
 }
-else if(number < randomNumber){
+else if(number < randomNumber){ 
 System.out.println("The Randon number is: " + randomNumber);
 System.out.println("Number is too low");
 System.out.println("Game over");
