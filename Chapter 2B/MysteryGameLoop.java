@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class MysteryGameLoop{
+public static void main(String[] args){
+Scanner input = new Scanner(System.in);
+Random random = new Random();
+
+int randomNumber = random.nextInt(1, 10);
+int guessNumber;
+int counter = 1;
+
+while(counter < 4){
+System.out.print("Enter any number for a guess: ");
+guessNumber = input.nextInt();
+
+if(guessNumber == randomNumber){
+System.out.println("Wow it's a match");
+break;
+}
+else{
+if(guessNumber > randomNumber){
+System.out.println("Number is too high");
+}
+if(guessNumber < randomNumber){
+System.out.println("Number is too low");
+}
+}
+
+counter++;
+}
+
+}
+
+}

@@ -5,10 +5,10 @@ public class MerstyGame{
 public static void main(String[] args){
 Scanner input = new Scanner(System.in);
 Random random = new Random();
-int randomNumber = random.nextInt(0, 11);
+int randomNumber = random.nextInt(1, 11);
 
 
-int number = 0;
+int number;
 
 System.out.print("Enter any number for a guess: ");
 number = input.nextInt();
