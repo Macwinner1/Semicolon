@@ -32,6 +32,6 @@ System.out.println("Number is too low");
 }
 }
 counter++;
-}//for
-}//method
-}//class
+}
+}
+}
