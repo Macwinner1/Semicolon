@@ -9,7 +9,6 @@ Random random = new Random();
 int randomNumber = random.nextInt(1, 10);
 int guessNumber;
 int counter = 1;
-int counterTotal = 0;
 
 while(counter != 0){
 System.out.print("Enter any number for a guess: ");
