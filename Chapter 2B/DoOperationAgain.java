@@ -18,7 +18,7 @@ result = number1 + number2;
 System.out.print("Do You wish to perform this operation again? ");
 
 
-} while(result < 0);
+} while(result != 0);
 System.out.print("here is your result: " + result);
 
 

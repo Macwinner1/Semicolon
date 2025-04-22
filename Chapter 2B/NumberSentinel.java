@@ -36,6 +36,7 @@ smallest = largest;
 
 
 System.out.println("this is the largest number: " + largest);
+
 System.out.println("this is the smallest number: " + smallest);
 }
 
