@@ -7,7 +7,7 @@ Scanner input = new Scanner(System.in);
 
 System.out.print("Enter any name: ");
 String name = input.nextLine();
-String back = " ";
+String back = "";
 
 
 for(int i = name.length()-1; i >= 0; i--){

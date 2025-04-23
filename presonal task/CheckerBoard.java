@@ -3,14 +3,17 @@ public static void main(String[] args){
 
 for(int i = 1; i < 9; i++){
 
-for(int j = i; j <= 1; j++){
+if(i >= 2){
+for(int j = 2; j <= 1; j+=2){
 System.out.print(" ");
+}
+}
 
-for(int k = 1; k <= 9; k++){
+for(int k = 1; k <= 8; k++){
 System.out.print("*");
 }
 
-}
+
 System.out.println();
 }
 
