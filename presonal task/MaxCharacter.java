@@ -3,7 +3,9 @@ public static void main(String[] args){
 
 int max = -1;
 String name = "abyyyy";
+//name = name.replaceAll("\\s","");
 char C = ' ';
+//System.out.print(name);
 
 int[] arr = new int[127];
 
