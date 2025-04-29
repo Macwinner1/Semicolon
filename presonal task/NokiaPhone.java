@@ -26,13 +26,16 @@ public class NokiaPhone{
 
  
                 """; 
- 
+ 	boolean exit = true;
+
+	while(exit){
+
         System.out.print(menu); 
         Scanner menuInput = new Scanner(System.in); 
             int pressMenu = menuInput.nextInt(); 
  
             switch (pressMenu) { 
-                case 1: { 
+                case 1-> { 
                     String phonebook = """ 
 
 			1. Phonebook 
@@ -54,49 +57,49 @@ public class NokiaPhone{
                     int pressPhoneBook = menuInput.nextInt(); 
  
                     switch (pressPhoneBook) { 
-                        case 1: {String search = """
+                        case 1-> {String search = """
 			
 				1. Search
 
                             """; System.out.print(search);} 
-                            break; 
-                        case 2: {String serviceNos = """
+                           
+                        case 2-> {String serviceNos = """
 
 				2. Service Nos
 
 			    """;   System.out.print(serviceNos);} 
-                            break; 
-                        case 3: {String addName = """
+                            
+                        case 3-> {String addName = """
 
 				3. Add name
 
 			    """;   System.out.print(addName);} 
-                            break; 
-                        case 4:{String erase = """
+                           
+                        case 4->{String erase = """
 
 				4. Erase
 
 			    """;   System.out.print(erase);} 
-                            break; 
-                        case 5: {String edit = """
+                             
+                        case 5-> {String edit = """
 
 				5. Edit
 
 			    """;   System.out.print(edit);} 
-                            break; 
-                        case 6: {String assignTone = """
+                         
+                        case 6-> {String assignTone = """
 
 				6. Assign tone
 
 			    """;   System.out.print(assignTone);} 
-                            break; 
-                        case 7: {String sendBcard = """
+                             
+                        case 7-> {String sendBcard = """
 
 				7. Send b'card
 
 		 	    """;   System.out.print(sendBcard);} 
-                            break; 
-                        case 8: { 
+                          
+                        case 8-> { 
                             String options = """ 
 
 				8. Options 
@@ -110,37 +113,37 @@ public class NokiaPhone{
                             System.out.print(options); 
                             int pressOptions = menuInput.nextInt(); 
                             switch (pressOptions) { 
-                                case 1: {String typeView = """
+                                case 1-> {String typeView = """
 
 					1. Type of view
 
 				    """; System.out.print(typeView);} 
-                                    break; 
-                                case 2:{String memoryStatus = """
+                                    
+                                case 2->{String memoryStatus = """
 
 					2. Memory status
 
 				    """; System.out.print(memoryStatus);} 
-                                    break; 
+                                     
                             } 
-                            break; 
+                            
                         } 
-                        case 9:{String speedDials = """
+                        case 9->{String speedDials = """
 
 				9. Speed dials
 
 			    """;   System.out.print(speedDials);} 
-                            break; 
-                        case 10:{String voiceTags = """
+                             
+                        case 10->{String voiceTags = """
 
 				10. Voice tags
 
 			    """;   System.out.print(voiceTags);}
-                            break; 
+                             
                     } 
-                    break; 
+                   
                 } 
-                case 2: { 
+                case 2-> { 
                     String messages = """ 
 
 
@@ -163,43 +166,43 @@ public class NokiaPhone{
                     int pressMessages = menuInput.nextInt(); 
  
                     switch (pressMessages) { 
-                        case 1: {String writeMessages = """
+                        case 1-> {String writeMessages = """
 
 				1. Write Messages
 
 			    """;   System.out.print(writeMessages);} 
-                            break; 
-                        case 2: {String inbox = """
+                           
+                        case 2-> {String inbox = """
 
 				2. Inbox
 
 			    """;   System.out.print(inbox);} 
-                            break; 
-                        case 3:{String outbox = """
+                           
+                        case 3->{String outbox = """
 
 				3. Outbox
 	
 			    """;   System.out.print(outbox);} 
-                            break; 
-                        case 4:{String pictureMessages = """
+                             
+                        case 4->{String pictureMessages = """
 
 				4. Picture Messages
 
 			    """;   System.out.print(pictureMessages);}
-                            break; 
-                        case 5: {String templates = """
+                            
+                        case 5-> {String templates = """
 
 				5. Templates
 
 			    """;   System.out.print(templates);} 
-                            break; 
-                        case 6: {String smileys = """
+                             
+                        case 6-> {String smileys = """
 
 				6. Smileys
 
 			    """;   System.out.print(smileys);} 
-                            break; 
-                        case 7: { 
+                             
+                        case 7-> { 
                             String messageSettings = """ 
 
 				7. Message Settings 
@@ -226,28 +229,30 @@ public class NokiaPhone{
                                     System.out.print(set1); 
                                     int pressSet1 = menuInput.nextInt(); 
                                     switch (pressSet1) { 
-                                        case 1: {String messageCenter = """
+                                        case 1-> {String messageCenter = """
    
 						1. Message center number
 
 					    """; System.out.print(messageCenter);} 
-                                            break; 
-                                        case 2: {String messagesSent = """
+                                            
+                                        case 2-> {String messagesSent = """
 
 						2. Message sent as
 
 					    """; System.out.print(messagesSent);} 
-                                            break; 
-                                        case 3:{String messagesValidity = """
+                                             
+                                        case 3->{String messagesValidity = """
 
 						3. Message validity
 
 					    """; System.out.print(messagesValidity);} 
-                                            break; 
-                                    } 
-                                    break; 
-                                } 
-                                case 2: { 
+                                        } 
+                                                                   
+
+					}
+                                
+                             case 2->{ 
+
                                     String common = """ 
 
 					2. Common 
@@ -262,58 +267,58 @@ public class NokiaPhone{
                                     System.out.print(common); 
                                     int pressCommon = menuInput.nextInt(); 
                                     switch (pressCommon) { 
-                                        case 1:{String deliveryReports = """
+                                        case 1->{String deliveryReports = """
    
 						1. Delivery reports
 
 					    """; System.out.print(deliveryReports);}
-                                            break; 
-                                        case 2: {String replyVia = """
+                                             
+                                        case 2-> {String replyVia = """
 
 						2. Reply Via same centre
 
 					    """; System.out.print(replyVia);}
-                                            break; 
-                                        case 3:{String characterSupport = """
+                                             
+                                        case 3->{String characterSupport = """
 
 						3. Character support
 
 					    """; System.out.print(characterSupport);}
-                                            break; 
-                                    } 
-                                    break; 
-                                } 
+                                          
+                                    //} 
+                                    
+                               // } 
                             } 
-                            break; 
+                            
                         } 
-                        case 8: {String infoService = """
+                        case 8-> {String infoService = """
 
 				8. Info Service
 
 			    """;   System.out.print(infoService);} 
-                            break; 
-                        case 9: {String voiceMailboxNumber = """
+                         
+                        case 9-> {String voiceMailboxNumber = """
 
 				9. Voice mailbox number 
 	
 			    """;   System.out.print(voiceMailboxNumber);}
-                            break; 
-                        case 10: {String serviceCommand = """
+                       
+                        case 10->{String serviceCommand = """
 
 				 10. Service command editor 
 
 			    """;   System.out.print(serviceCommand);} 
-                            break; 
+                            
                     } 
-                    break; 
+                     
                 } 
-                case 3: { String chat = """
+                case 3-> { String chat = """
 
 			3. Chat
 
 		    """;   System.out.print(chat);}
-                    break; 
-                case 4: { 
+                     
+                case 4-> { 
                     String callRegister = """ 
 
 
@@ -334,31 +339,31 @@ public class NokiaPhone{
                     int pressCallRegister = menuInput.nextInt(); 
  
                     switch (pressCallRegister) { 
-                        case 1: {String missedCalls = """
+                        case 1-> {String missedCalls = """
 
 				1. Missed calls
 
 			    """;   System.out.print(missedCalls);} 
-                            break; 
-                        case 2: {String receivedCalls = """
+                            
+                        case 2-> {String receivedCalls = """
 
 				2. Received calls
 
 			    """;   System.out.print(receivedCalls);} 
-                            break; 
-                        case 3: {String dialledNumbers = """
+                           
+                        case 3-> {String dialledNumbers = """
 
 				3. Dialled numbers
 
 			    """;   System.out.print(dialledNumbers);} 
-                            break; 
-                        case 4: {String eraseRecentCall = """
+                       
+                        case 4-> {String eraseRecentCall = """
 
 				4. Erase recent call lists
 
 			    """;   System.out.print(eraseRecentCall);} 
-                            break; 
-                        case 5: {  
+                           
+                        case 5-> {  
 				String showCallDuration = """ 
 
 					5. Show call duration 
@@ -374,41 +379,41 @@ public class NokiaPhone{
                                     System.out.print(showCallDuration); 
                                     int pressShowCallDuration = menuInput.nextInt(); 
                                     switch (pressShowCallDuration) { 
-                                        case 1: {String lastCallDuration = """
+                                        case 1-> {String lastCallDuration = """
    
 						1. Last call duration
 
 					    """; System.out.print(lastCallDuration);} 
-                                            break; 
-                                        case 2: {String allCallsDuration = """
+                                          
+                                        case 2-> {String allCallsDuration = """
 
 						2. All calls' duration 
 
 					    """; System.out.print(allCallsDuration);} 
-                                            break; 
-                                        case 3:{String receivedCallsDuration = """
+                                       
+                                        case 3->{String receivedCallsDuration = """
 
 						3. Received calls' duration
 
 					    """; System.out.print(receivedCallsDuration);}
-					    break;
-                                        case 4: {String dialledCallsDuration = """
+					  
+                                        case 4-> {String dialledCallsDuration = """
    
 						4. Dialled calls' duration
 
 					    """; System.out.print(dialledCallsDuration);} 
-                                            break; 
-                                        case 5: {String clearTimers = """
+                                         
+                                        case 5-> {String clearTimers = """
 
 						5. Clear timers
 
 					    """; System.out.print(clearTimers);} 
-                                            break;
+                                         
                                     } 
-                                    break; 
+                                  
                                 } 
 
-                        case 6: { 
+                        case 6-> { 
 				String showCallCosts = """ 
 
 
@@ -423,29 +428,29 @@ public class NokiaPhone{
                                     System.out.print(showCallCosts); 
                                     int pressShowCallCost = menuInput.nextInt(); 
                                     switch (pressShowCallCost) { 
-                                        case 1: {String lastCallCost = """
+                                        case 1-> {String lastCallCost = """
    
 						1. Last call cost
 
 					    """; System.out.print(lastCallCost);} 
-                                            break; 
-                                        case 2: {String allCallsCost = """
+                                          
+                                        case 2-> {String allCallsCost = """
 
 						2. All calls' cost 
 
 					    """; System.out.print(allCallsCost);} 
-                                            break; 
-                                        case 3: {String clearCounters = """
+                                           
+                                        case 3-> {String clearCounters = """
 
 						3. Clear counters
 
 					    """; System.out.print(clearCounters);} 
-                                            break;
+                                         
                                     } 
                                     break; 
                                 } 
 
-                        case 7: {
+                        case 7-> {
 				String callCostSettings = """ 
 
 
@@ -459,31 +464,31 @@ public class NokiaPhone{
                                     System.out.print(callCostSettings); 
                                     int pressCallCostSettings = menuInput.nextInt(); 
                                     switch (pressCallCostSettings) { 
-                                        case 1: {String callCostLimit = """
+                                        case 1-> {String callCostLimit = """
    
 						1. Call cost limit
 
 					    """; System.out.print(callCostLimit);} 
-                                            break; 
-                                        case 2: {String showCostsIn = """
+ 
+                                        case 2-> {String showCostsIn = """
 
 						2. Show costs in
 
 					    """; System.out.print(showCostsIn);} 
-                                            break;
+                                          
                                     } 
                                     break; 
                                 } 
-                        case 8: {String prepaidCredit = """
+                        case 8-> {String prepaidCredit = """
 
 				8. Prepaid credit
 
 			    """;   System.out.print(prepaidCredit);}
-                            break; 
+                            
                     } 
                     break; 
                 } 
-                case 5: { 
+                case 5-> { 
                     String tones = """ 
 
                             5. Tones 
@@ -504,64 +509,64 @@ public class NokiaPhone{
                     int pressTones = menuInput.nextInt(); 
  
                     switch (pressTones) { 
-                        case 1: {String ringingTone = """
+                        case 1-> {String ringingTone = """
 
 				1. Ringing Tone
 
 			    """;   System.out.print(ringingTone);}
-                            break; 
-                        case 2: {String ringingVolume = """
+                           
+                        case 2-> {String ringingVolume = """
 
 				2. Ringing volume
 
 			    """;   System.out.print(ringingVolume);} 
-                            break; 
-                        case 3:{String incomingCall = """
+                       
+                        case 3->{String incomingCall = """
 
 				3. Incoming call alert
 
 			    """;   System.out.print(incomingCall);}
-                            break; 
-                        case 4:{String composer = """
+                             
+                        case 4->{String composer = """
 
 				4. Composers
 
 				""";   System.out.print(composer);} 
-                            break; 
-                        case 5: {String messageAlert = """
+                            
+                        case 5-> {String messageAlert = """
 
 				5. Message alert tone
 
 			    """;   System.out.print(messageAlert);} 
-                            break; 
-                        case 6:{String keypadTones = """
+                          
+                        case 6->{String keypadTones = """
 
 				6. Keypad tones
 
 			    """;   System.out.print(keypadTones);} 
-                            break; 
-                        case 7:{String warningAndGame = """
+                           
+                        case 7->{String warningAndGame = """
 
 				7. Warning and game tones
 
 			    """;   System.out.print(warningAndGame);} 
-                            break; 
-                        case 8: {String vibratingAlert = """
+                         
+                        case 8-> {String vibratingAlert = """
 
 				8. Vibrating alert
 
 			    """;   System.out.print(vibratingAlert);} 
-                            break; 
-                        case 9: {String screenSaver = """
+                         
+                        case 9-> {String screenSaver = """
 
 				9. Screen saver
 
 			    """;   System.out.print(screenSaver);} 
-                            break; 
+                           
                     } 
                     break; 
                 } 
-                case 6: {                           
+                case 6-> {                           
                       String settings = """ 
 
     				6. Settings 
@@ -576,7 +581,7 @@ public class NokiaPhone{
                             System.out.print(settings); 
                             int pressSetting = menuInput.nextInt(); 
                             switch (pressSetting) { 
-                                case 1: { 
+                                case 1-> { 
                                     String callSettings = """ 
 
 					1. Call settings 
@@ -594,46 +599,46 @@ public class NokiaPhone{
                                     System.out.print(callSettings); 
                                     int pressCallSettings = menuInput.nextInt(); 
                                     switch (pressCallSettings) { 
-                                        case 1: {String automaticRedial = """
+                                        case 1-> {String automaticRedial = """
    
 						1. Automatic redial
 
 					    """; System.out.print(automaticRedial);} 
-                                            break; 
-                                        case 2: {String speedDialling = """
+                                             
+                                        case 2-> {String speedDialling = """
 
 						2. Speed dialling
 
 					    """; System.out.print(speedDialling);} 
-                                            break; 
-                                        case 3:{String callWaiting = """
+                                           
+                                        case 3->{String callWaiting = """
 
 						3. Call waiting options
 
 					    """; System.out.print(callWaiting);}
-					    break;
-                                        case 4: {String ownNumber = """
+					   
+                                        case 4-> {String ownNumber = """
    
 						4. Own number sending
 
 					    """; System.out.print(ownNumber);} 
-                                            break; 
-                                        case 5: {String phoneLineIn = """
+                                         
+                                        case 5-> {String phoneLineIn = """
 
 						5. Phone line in use
 
 					    """; System.out.print(phoneLineIn);} 
-                                            break; 
-                                        case 6:{String automaticAnswer = """
+                                        
+                                        case 6->{String automaticAnswer = """
 
 						6. Automatic answer
 
 					    """; System.out.print(automaticAnswer);} 
-                                            break; 
+                                      
                                     } 
-                                    break; 
+                                     
                                 } 
-				case 2: { 
+				case 2-> { 
                                     String phoneSetting = """ 
 
 					2. Phone setting 
@@ -651,46 +656,46 @@ public class NokiaPhone{
                                     System.out.print(phoneSetting); 
                                     int pressPhoneSettings = menuInput.nextInt(); 
                                     switch (pressPhoneSettings) { 
-                                        case 1: {String language = """
+                                        case 1-> {String language = """
    
 						1. Language
 
 					    """; System.out.print(language);} 
-                                            break; 
-                                        case 2: {String cellInfoDisplay = """
+                                      
+                                        case 2-> {String cellInfoDisplay = """
 
 						2. Cell info display
 
 					    """; System.out.print(cellInfoDisplay);} 
-                                            break; 
-                                        case 3:{String welcomeNote = """
+                                   
+                                        case 3->{String welcomeNote = """
 
 						3. Welcome note
 
 					    """; System.out.print(welcomeNote);}
-					    break;
-                                        case 4: {String networkSelection = """
+					
+                                        case 4-> {String networkSelection = """
    
 						4. Network selection
 
 					    """; System.out.print(networkSelection);} 
-                                            break; 
-                                        case 5: {String lights = """
+                                   
+                                        case 5-> {String lights = """
 
 						5. Lights
 
 					    """; System.out.print(lights);} 
-                                            break; 
-                                        case 6:{String confirmSIM = """
+                                          
+                                        case 6->{String confirmSIM = """
 
 						6. Confirm SIM service actions
 
 					    """; System.out.print(confirmSIM);} 
-                                            break; 
+                                           
                                     } 
-                                    break; 
+                                    
                                 } 
-				case 3: { 
+				case 3-> { 
                                     String securitySetting = """ 
 
 
@@ -709,69 +714,69 @@ public class NokiaPhone{
                                     System.out.print(securitySetting); 
                                     int pressSecuritySetting = menuInput.nextInt(); 
                                     switch (pressSecuritySetting) { 
-                                        case 1: {String codeRequest = """
+                                        case 1-> {String codeRequest = """
    
 						1. PIN code request
 
 					    """; System.out.print(codeRequest);} 
-                                            break; 
-                                        case 2: {String callBarringService = """
+                                           
+                                        case 2-> {String callBarringService = """
 
 						2. Call barring service
 
 					    """; System.out.print(callBarringService);} 
-                                            break; 
-                                        case 3:{String fixedDialling = """
+                                            
+                                        case 3->{String fixedDialling = """
 
 						3. Fixed dialling
 
 					    """; System.out.print(fixedDialling);}
-					    break;
-                                        case 4: {String closedUserGroup = """
+					 
+                                        case 4-> {String closedUserGroup = """
    
 						4. Closed user group
 
 					    """; System.out.print(closedUserGroup);} 
-                                            break; 
-                                        case 5: {String phoneSecurity = """
+                                        
+                                        case 5->{String phoneSecurity = """
 
 						5. Phone security
 
 					    """; System.out.print(phoneSecurity);} 
-                                            break; 
-                                        case 6:{String changeAccessCodes = """
+                                         
+                                        case 6->{String changeAccessCodes = """
 
 						6. Change access codes
 
 					    """; System.out.print(changeAccessCodes);} 
-                                            break; 
+                                      
                                     } 
                                     break; 
                                 } 
 
-                                case 4: {String restoreFactory = """
+                                case 4-> {String restoreFactory = """
 
 					4. Restore factory setting
 
 			    	     """;   System.out.print(restoreFactory);} 
-                            	     break;
+                            	   
                                      
-                                } break;
+                                } 
                             }
-                case 7:{ String callDivert = """
+                case 7->{ String callDivert = """
 
 			7. Call divert
 
 		    """;   System.out.print(callDivert); 
                     int pressCallDivert = menuInput.nextInt();
 			switch (pressCallDivert) {
-				case 0:{System.out.print("0 back");}
-				default: {System.out.print("Invaild Input");}  
-				} break;
+				case 0->{System.out.print("0 back");}
+				default-> {System.out.print("Invaild Input");}  
+				} 
                              } 
 
 			 
-                case 8:{ String games = """
+                case 8->{ String games = """
 
 			Games
 			0. Back
@@ -779,11 +784,11 @@ public class NokiaPhone{
 		    """;   System.out.print(games); 
                      int pressGames = menuInput.nextInt();
 			switch (pressGames) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0->{System.out.print("0 back");} 
+				}
                              } 
 
-                case 9:{ String calculator = """
+                case 9->{ String calculator = """
 
 			Calculator
 			0. Back
@@ -791,12 +796,12 @@ public class NokiaPhone{
 		    """;   System.out.print(calculator); 
                      int pressCalculator = menuInput.nextInt();
 			switch (pressCalculator) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0->{System.out.print("0 back");} 
+				} 
                              } 
  
 
-                case 10:{ String reminders = """
+                case 10->{ String reminders = """
 
 			Reminders
 			0. Back
@@ -804,11 +809,12 @@ public class NokiaPhone{
 		    """;   System.out.print(reminders); 
                     int pressReminders = menuInput.nextInt();
 			switch (pressReminders) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+			case 0->{System.out.print("0 back");} 
+			default-> System.out.print("Invalid option");
+				} 
                              } 
 
-                case 11: {  
+                case 11-> {  
 		
                     String clock = """ 
 			
@@ -827,7 +833,7 @@ public class NokiaPhone{
                     System.out.print(clock); 
                      pressClock = menuInput.nextInt(); 
                     switch (pressClock) { 
-                        case 1:{String alarmClock = """
+                        case 1->{String alarmClock = """
 
 				Alarm Clock
 				0. Back
@@ -835,10 +841,10 @@ public class NokiaPhone{
 			    """;   System.out.print(alarmClock);
 				int pressAlarmClock = menuInput.nextInt();
 			switch (pressAlarmClock) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0->{System.out.print("0 back");} 
+				} 
                              }
-                        case 2:{String clockSettings = """
+                        case 2->{String clockSettings = """
 
 				Clock settings
 				0. Back
@@ -846,11 +852,11 @@ public class NokiaPhone{
 			    """;   System.out.print(clockSettings); 
                             int pressClockSettings = menuInput.nextInt();
 			switch (pressClockSettings) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0->{System.out.print("0 back");} 
+				} 
                              } 
 
-                        case 3:{String dateSetting = """
+                        case 3->{String dateSetting = """
 
 				Date setting
 				0. Back
@@ -858,11 +864,11 @@ public class NokiaPhone{
 			    """;   System.out.print(dateSetting); 
                             int pressDateSetting = menuInput.nextInt();
 			switch (pressDateSetting) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0->{System.out.print("0 back");} 
+				} 
                              }  
 
-                        case 4: {String stopwatch = """
+                        case 4-> {String stopwatch = """
 
 				Stopwatch
 				0. Back
@@ -870,11 +876,11 @@ public class NokiaPhone{
 			    """;   System.out.print(stopwatch); 
                              int pressStopwatch = menuInput.nextInt();
 			switch (pressStopwatch) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0->{System.out.print("0 back");} 
+				} 
                              }
  
-                        case 5:{String countdownTimer = """
+                        case 5->{String countdownTimer = """
 
 				Countdown timer
 				0. Back
@@ -882,11 +888,11 @@ public class NokiaPhone{
 			    """;   System.out.print(countdownTimer);
                             int pressCountdownTimer = menuInput.nextInt();
 			switch (pressCountdownTimer) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0->{System.out.print("0 back");} 
+				} 
                              } 
 
-                        case 6:{String AutoUpdate = """
+                        case 6->{String AutoUpdate = """
 
 				Auto update of date and time
 				0. Back
@@ -894,40 +900,58 @@ public class NokiaPhone{
 			    """;   System.out.print(AutoUpdate); 
                             int pressAutoUpdate = menuInput.nextInt();
 			switch (pressAutoUpdate) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+			case 0-> {System.out.print("0 back");}
+			default-> System.out.print("Invalid option"); 
+
+				}
                              } 
                     }
                     break; 		
                 } 
-                case 12:{ String profiles = """
+                case 12->{ String profiles = """
 
 			Profiles
 			0. Back
 
-		    """;   System.out.print(profiles);
+		    """;  
+		boolean back12 = true;
+		while(back12){
+		 System.out.print(profiles);
                     int pressProfiles = menuInput.nextInt();
 			switch (pressProfiles) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+				case 0-> back12 = false; 
+				default-> System.out.print("invaild input"); 
+				} 
+				}
                              } 
-                case 13: { String simServices = """
+                case 13-> { String simServices = """
 
 			SIM services
 			0. Back
 
-		    """;   System.out.print(simServices); 
+		    """;  
+
+		boolean back13 = true;
+		while(back13){
+			 System.out.print(simServices); 
                     int pressSimServices = menuInput.nextInt();
+			if(pressSimServices == 0){
+			break;
+			}
 			switch (pressSimServices) {
-				case 0:{System.out.print("0 back");} 
-				} break;
+			case 0-> back13 = false; 
+			default-> System.out.print("Invalid option");
+				}  
                              } 
-                default: 
-                    System.out.print("Invalid option"); 
-                    break; 
+			} 
+		case 14-> exit = false; 
+                default-> System.out.print("Invalid option"); 
+                    
             } 
-       { 
-            menuInput.close(); 
+        
+           // menuInput.close(); 
         } 
+
     } 
-} 
+} //main
+}//class
