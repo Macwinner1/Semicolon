@@ -1,4 +1,5 @@
 package Input;
 
-public class Input {
+interface Input {
+    String fetch();
 }
