@@ -28,6 +28,11 @@ public class Diary {
     }
 
     public Entry findEntryById(int id) {
-        for ()
+        for(Entry entry : entries){
+            if(entry.getId() == id){
+                return entry;
+            }
+        }
+        return null;
     }
 }
