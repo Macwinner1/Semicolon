@@ -5,16 +5,17 @@ public class Entry {
     private String title;
     private String body;
     private LocalDateTime dateCreated;
-    public Entry(String title, String body){
+    public Entry(int id, String title, String body){
         this.title = title;
         this.body = body;
+        this.id = id;
     }
 
     public int getId() {
         return id;
     }
 
-    public static void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 }

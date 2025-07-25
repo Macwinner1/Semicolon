@@ -21,11 +21,9 @@ public class DiaryTest {
         assertTrue(diary.isLocked());
     }
     @Test
-    public void testThatDiaryIsUnLocked(){
-        Diary diary = new Diary("okafor", "joePassword");
-        Entry.setId(4443);
-        diary.createEntry("my story", "tech so far");
-        assertFalse(diary.findEntryById(4322));
+    public void testThatCreateEntry(){
+        Entry entry = new Entry(4544, "okafor", "joePassword");
+        assertFalse(entry.findEntryById(4322));
     }
 
 }
